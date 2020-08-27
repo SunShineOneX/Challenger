@@ -1,3 +1,5 @@
+![Project Showcase](https://github.com/SunShineOneX/Challenger/blob/master/src/assets/CHALLENGER.png?raw=true)
+
 # Challenger
 
 Challenger is a PC gamers dream e-commerce store. Offering the best games, high-res monitors,
