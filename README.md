@@ -1,68 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Challenger
 
-## Available Scripts
+Challenger is a PC gamers dream e-commerce store. Offering the best games, high-res monitors,
+and mechanical keyboards at incredible prices and customer service that is impossible to find these days.
+(Target clientele: Primarily PC gamers however gamers in general)
+(MIssion: It is hard to have a refreshing, over-the-top customer service experience these days. It's also hard to find dirt cheap prices.
+Challenger does both.)
 
-In the project directory, you can run:
+### Front-end Technologies Used
+- JS (primarily ES6)
+- React
+- React Router
+- Use of async actions and AJAX requests
+- Has 3 model APIs
+- Bootstrap
+- Responsive mobile design
 
-### `npm start`
+### Back-end Technologies Used
+- Java 
+- Use of Postgres as SQL database
+- Uses Spring Boot with Maven as a build tool
+- Uses MVC architecture
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Anticipated Challenges
+- connecting the front-end to the back-end 
+- full CRUD capabilities on one of the model APIs
+- being able to update my SQL database in real-time
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+### Stretch Goals
+ - Redux
+ - Live deploy
+ - Google Firebase
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### CRUD model API
+One of the model APIs will include full CRUD capabilities where you are able to suggest your favorite video games to be reviewed by Challenger staff.
+(The page will have a preset few popular games that "customers" want to have reviewed on page load. You will be able to enter the name of the game you want reviewed, the company who makes it, a text field to describe why you want Challenger to review it, and your email address for contact info.
+This entered data will be updated into a seperate component called 'Review List' where you can see the changes you made. The goal is to have this also
+update my PostgreSQL database)
