@@ -26,10 +26,10 @@ class Landing extends Component {
             }); 
             const monitor3 = await axios.post("http://localhost:8080/monitors",
             {
-                 model: "34 Superwide 4K",
-                 manufacturer: "LG",
-                 description: "Super awesome monitor!",
-                 price: "$349.95"
+                 model: "24 curved 4K",
+                 manufacturer: "Samsung",
+                 description: "high quality curved monitor",
+                 price: "$139.95"
             }); 
         } catch {
             console.log("error");
@@ -37,24 +37,24 @@ class Landing extends Component {
         try {
             const keyboard1 = await axios.post("http://localhost:8080/keyboards",
             {
-                 model: "Ultrawide 24",
-                 manufacturer: "Dell",
-                 description: "Awesome 1920X1200 res monitor!",
-                 price: "$239.95"
+                 model: "K552",
+                 manufacturer: "RedDragon",
+                 description: "RBG awesomeness",
+                 price: "$64.95"
             }); 
             const keyboard2 = await axios.post("http://localhost:8080/keyboards",
             {
-                 model: "34 Superwide 4K",
-                 manufacturer: "LG",
-                 description: "Super awesome monitor!",
-                 price: "$349.95"
+                 model: "Drop Shift",
+                 manufacturer: "Drop",
+                 description: "full size mechanical with RGB!",
+                 price: "$250"
             }); 
             const keyboard3 = await axios.post("http://localhost:8080/keyboards",
             {
-                 model: "34 Superwide 4K",
-                 manufacturer: "LG",
-                 description: "Super awesome monitor!",
-                 price: "$349.95"
+                 model: "Alloy Elite 2",
+                 manufacturer: "HyperX",
+                 description: "full size mechanical keyboard with lustrous pudding key caps and gorgeous RHB",
+                 price: "$129.95"
             }); 
         } catch {
             console.log("error");
@@ -62,24 +62,24 @@ class Landing extends Component {
         try {
             const review1 = await axios.post("http://localhost:8080/reviews",
             {
-                 model: "Ultrawide 24",
-                 manufacturer: "Dell",
-                 description: "Awesome 1920X1200 res monitor!",
-                 price: "$239.95"
+                 title: "Starcraft",
+                 developer: "Blizzard",
+                 description: "RTS",
+                 email: "leonard@gmail.com"
             }); 
             const review2 = await axios.post("http://localhost:8080/reviews",
             {
-                 model: "34 Superwide 4K",
-                 manufacturer: "LG",
-                 description: "Super awesome monitor!",
-                 price: "$349.95"
+                 title: "Warcraft",
+                 developer: "Blizzard",
+                 description: "Super awesome RTS game",
+                 email: "payton@yahoo.com"
             }); 
             const review3 = await axios.post("http://localhost:8080/reviews",
             {
-                 model: "34 Superwide 4K",
-                 manufacturer: "LG",
-                 description: "Super awesome monitor!",
-                 price: "$349.95"
+                 title: "League of Legends",
+                 developer: "Riot games",
+                 description: "fast paced MOBA cheeks mcClappington",
+                 email: "sunshine@gmail.com"
             }); 
         } catch {
             console.log("error");
