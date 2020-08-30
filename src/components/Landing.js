@@ -1,6 +1,7 @@
 import "../styles/landing.css";
 import axios from "axios";
 import React, { Component } from "react";
+import {BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 
 class Landing extends Component {
 
@@ -91,7 +92,7 @@ class Landing extends Component {
           <h1>Hello landing!!</h1>
           <img src={require("../assets/CHALLENGER.png")} />
         </div>
-        <button onClick={postLaunchData}>Get started</button>
+        <button onClick={postLaunchData}><Link to ="/home">Get started</Link></button>
       </div>
     );
   }
