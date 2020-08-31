@@ -1,14 +1,30 @@
-import React from 'react';
-import './App.css';
-import axios from 'axios';
+import React from "react";
+import "./App.css";
 import Landing from "./components/Landing";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Keyboards from "./components/Keyboards";
+import {BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 
 function App() {
-
   return (
+    <Router>
     <div>
-    <Landing />
+      <Switch>
+      <Route exact path="/">
+      <Landing />
+      </Route>
+      <Route path="/home">
+        <Navbar />
+        <Home />
+      </Route>
+      <Route path="/keyboards">
+        <Navbar />
+        <Keyboards />
+      </Route>
+      </Switch>
     </div>
+    </Router>
   );
 }
 
