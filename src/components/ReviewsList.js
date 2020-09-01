@@ -41,13 +41,13 @@ import "../styles/reviewlist.css";
                             <tr align="center">
                                 <td colspan="6">No reviews available...</td>
                             </tr> :
-                            this.state.info.map((reviews) => {
+                            this.state.info.map((review) => {
                                 return (
                                     <tr>
-                                        <td>review.title</td>
-                                        <td>review.developer</td>
-                                        <td>review.description</td>
-                                        <td>review.email</td>
+                                        <td>{review.title}</td>
+                                        <td>{review.developer}</td>
+                                        <td>{review.description}</td>
+                                        <td>{review.email}</td>
                                     </tr>
                                 );
                             })}
