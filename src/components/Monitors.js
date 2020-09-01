@@ -38,28 +38,7 @@ class Monitors extends Component {
               this.getMonitorInfo();
           }
       });
-      
   };
-
-//   deleteMonitorInfo(id) {
-//     try {
-//       const deleteRes = axios.delete("http://localhost:8080/monitors/" + id);
-//       if (deleteRes.data != null) {
-//           alert("Item deleted.");
-//           this.setState({
-//               info: this.state.info.filter(monitor => monitor.id !== id),
-//           });
-//       }
-//     } catch {
-//         console.log("error from delete")
-//     }
-//     this.getMonitorInfo();
-// }
-
-//   componentDidMount() {
-//       this.deleteMonitorInfo();
-//   }
-
 
   render() {
     return (

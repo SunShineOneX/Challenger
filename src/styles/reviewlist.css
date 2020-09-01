@@ -1,0 +1,5 @@
+.review__table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

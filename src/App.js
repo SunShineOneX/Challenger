@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Keyboards from "./components/Keyboards";
 import Monitors from "./components/Monitors";
 import {BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import ReviewList from "./components/ReviewsList";
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
       <Route path="/monitors">
         <Navbar />
         <Monitors />
+      </Route>
+      <Route path="/reviews">
+        <Navbar />
+        <ReviewList />
       </Route>
       </Switch>
     </div>
