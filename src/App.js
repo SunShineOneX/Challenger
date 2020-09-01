@@ -4,6 +4,7 @@ import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Keyboards from "./components/Keyboards";
+import Monitors from "./components/Monitors";
 import {BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -21,6 +22,10 @@ function App() {
       <Route path="/keyboards">
         <Navbar />
         <Keyboards />
+      </Route>
+      <Route path="/monitors">
+        <Navbar />
+        <Monitors />
       </Route>
       </Switch>
     </div>

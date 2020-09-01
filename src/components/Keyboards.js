@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "../styles/keyboards.css";
 
 class Keyboards extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class Keyboards extends Component {
 
   async getKeyboardInfo() {
     try {
-      const res = await axios.get("http://localhost:8080/keyboards");
+      const res = await axios.get("http://localhost:8080/monitors");
       this.setState({ info: res.data }); // remove json if issue
       console.log(this.state.info);
     } catch {
@@ -27,7 +28,7 @@ class Keyboards extends Component {
     return (
       <div className="container-fluid">
         <h1>Keyboards</h1>
-
+        <div id="table">
         <table>
           <thead>
             <tr>
@@ -50,6 +51,7 @@ class Keyboards extends Component {
             })}
           </tbody>
           </table>
+          </div>
 
       </div>
     );
