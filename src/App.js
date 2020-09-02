@@ -30,11 +30,11 @@ function App() {
         <Navbar />
         <Monitors />
       </Route>
-      <Route path="/reviews">
+      <Route exact path="/reviews">
         <Navbar />
         <AddReview />
       </Route>
-      <Route path="/reviews/list">
+      <Route exact path="/reviews/list">
         <Navbar />
         <ReviewList />
       </Route>
