@@ -55,6 +55,7 @@ class Monitors extends Component {
               <th>Manufacturer</th>
               <th>Description</th>
               <th>Price</th>
+              <th>Edit</th>
             </tr>
           </thead>
           <tbody>
@@ -70,7 +71,9 @@ class Monitors extends Component {
                   <td>{monitor.manufacturer}</td>
                   <td>{monitor.description}</td>
                   <td>{monitor.price}</td>
-                  <button id={ monitor.id } onClick={ (e) => this.deleteMonitorInfo(e.target.id) }>Delete</button>
+                  <td>
+                      <button id={ monitor.id } onClick={ (e) => this.deleteMonitorInfo(e.target.id) }>Delete</button>
+                </td>
                 </tr>
               );
             })}

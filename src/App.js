@@ -5,8 +5,10 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Keyboards from "./components/Keyboards";
 import Monitors from "./components/Monitors";
-import {BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import AddReview from "./components/AddReview";
 import ReviewList from "./components/ReviewsList";
+import {BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+
 
 function App() {
   return (
@@ -29,6 +31,10 @@ function App() {
         <Monitors />
       </Route>
       <Route path="/reviews">
+        <Navbar />
+        <AddReview />
+      </Route>
+      <Route path="/reviews/list">
         <Navbar />
         <ReviewList />
       </Route>
