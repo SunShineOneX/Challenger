@@ -63,6 +63,7 @@ class addReview extends Component {
     } catch {
       console.log("error");
     }
+    alert("Review added");
     document.getElementById(`game__title`).value="";
     document.getElementById(`game__developer`).value="";
     document.getElementById(`game__description`).value="";
