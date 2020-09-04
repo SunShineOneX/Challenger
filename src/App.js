@@ -7,6 +7,7 @@ import Keyboards from "./components/Keyboards";
 import Monitors from "./components/Monitors";
 import AddReview from "./components/AddReview";
 import ReviewList from "./components/ReviewsList";
+import Games from "./components/Games";
 import {BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 
 
@@ -29,6 +30,10 @@ function App() {
       <Route path="/monitors">
         <Navbar />
         <Monitors />
+      </Route>
+      <Route path="/games">
+        <Navbar />
+        <Games />
       </Route>
       <Route exact path="/reviews">
         <Navbar />

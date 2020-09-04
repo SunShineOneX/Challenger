@@ -25,6 +25,9 @@ class Navbar extends Component {
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link">
+                <Link to="/games">Games</Link>
+              </a>
               <a class="nav-item nav-link">
                 <Link to="/keyboards">Keyboards</Link>
               </a>
