@@ -7,3 +7,26 @@
 th {
     padding: 1rem 2rem;
 }
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.card {    
+    width: 35vw;
+    margin: 2vw;
+    border: none;
+}
+
+.card-img-top {
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card-body {
+    padding: 0;
+}

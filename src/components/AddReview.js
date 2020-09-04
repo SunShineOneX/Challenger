@@ -59,16 +59,28 @@ class addReview extends Component {
         developer: this.state.developer,
         description: this.state.description,
         email: this.state.email,
-      });
+      })
+      alert("Review added");
+      document.getElementById(`game__title`).value="";
+      document.getElementById(`game__developer`).value="";
+      document.getElementById(`game__description`).value="";
+      document.getElementById(`user__email`).value="";
     } catch {
       console.log("error");
     }
-    alert("Review added");
-    document.getElementById(`game__title`).value="";
-    document.getElementById(`game__developer`).value="";
-    document.getElementById(`game__description`).value="";
-    document.getElementById(`user__email`).value="";
   };
+
+  submitReview = async () => {
+    try {
+    this.postReviewData();
+    alert("Review added.")
+  } catch {
+    console.log("error")
+  }
+};
+
+
+
 
   render() {
 
@@ -122,7 +134,7 @@ class addReview extends Component {
               </div>
             </div>
             <div className="form-group">
-              <button type="submit" class="btn btn-primary" id="submit__btn" onClick={this.postReviewData}>
+              <button type="submit" class="btn btn-primary" id="submit__btn" onClick={this.submitReview}>
                 Submit Review
               </button>
             </div>

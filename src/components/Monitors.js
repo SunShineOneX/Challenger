@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { Component } from "react";
+import "../styles/monitors.css";
 
 class Monitors extends Component {
   constructor(props) {
@@ -70,6 +71,7 @@ class Monitors extends Component {
                       <td>{monitor.price}</td>
                       <td>
                         <button
+                          class="btn btn-primary"
                           id={monitor.id}
                           onClick={(e) => this.deleteMonitorInfo(e.target.id)}
                         >

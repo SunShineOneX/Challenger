@@ -12,7 +12,7 @@ class Keyboards extends Component {
 
   async getKeyboardInfo() {
     try {
-      const res = await axios.get("http://localhost:8080/monitors");
+      const res = await axios.get("http://localhost:8080/keyboards");
       this.setState({ info: res.data }); // remove json if issue
       console.log(this.state.info);
     } catch {
@@ -26,36 +26,27 @@ class Keyboards extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
-        <h1>Keyboards</h1>
-        <div id="table">
-        <table>
-          <thead>
-            <tr>
-              <th>Model</th>
-              <th>Manufacturer</th>
-              <th>Description</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            {this.state.info.map((keyboard) => {
-              return (
-                <tr>
-                  <td>{keyboard.model}</td>
-                  <td>{keyboard.manufacturer}</td>
-                  <td>{keyboard.description}</td>
-                  <td>{keyboard.price}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-          </table>
-          </div>
-
+      <div className="container-fluid" id="card__grid">
+          <div class="row">
+          {this.state.info.map((keyboard) => {
+          return (
+            <div class="card col-lg-3 col-md-4">
+  <img class="card-img-top" src={keyboard.url} alt="Card image cap" />
+  <div class="card-body">
+    <h5 class="card-title">{keyboard.model}</h5>
+    <h6 class="card-subtitle">{keyboard.manufacturer}</h6>
+    <p class="card-text">{keyboard.description}</p>
+    <p class="card-text"><b>{keyboard.price}</b></p>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+  </div>    
+        );
+        })}
       </div>
-    );
-  }
-}
+      </div>
+    
+     
+    )}
+    }
 
 export default Keyboards;

@@ -68,7 +68,7 @@ class ReviewList extends Component {
                       <td>{review.description}</td>
                       <td>{review.email}</td>
                       <td>
-                        <button
+                        <button class="btn btn-primary"
                           id={review.id}
                           onClick={(e) => this.deleteReviewInfo(e.target.id)}
                         >
