@@ -1,0 +1,14 @@
+.container-fluid {
+  padding: 0;
+}
+
+.challenger__carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-block {
+  width: 100%;
+  height: calc(100vh - 200px);
+}

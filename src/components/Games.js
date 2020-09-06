@@ -21,17 +21,18 @@ import "../styles/games.css";
       }
     
       componentDidMount() {
-        this.getgameInfo();
+        this.getGameInfo();
       }
     
       render() {
         return (
           <div className="container-fluid" id="card__grid">
+              <h1>Games</h1>
               <div class="row">
               {this.state.info.map((game) => {
               return (
                 <div class="card col-lg-3 col-md-4">
-      <img class="card-img-top" src={game.url} alt="Card image cap" />
+      <img class="card-img-top" src={game.url} onMouseOver={e => (e.currentTarget.src =`${game.webUrl}`)} onMouseOut={e => (e.currentTarget.src =`${game.url}`)}  alt="Card image cap" />
       <div class="card-body">
         <h5 class="card-title">{game.title}</h5>
         <h6 class="card-subtitle">{game.developer}</h6>

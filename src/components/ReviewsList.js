@@ -44,8 +44,8 @@ class ReviewList extends Component {
       <div className="container-fluid">
           <h1>Reviews</h1>
         <div className="review__table">
-          <table>
-            <thead>
+          <table className="table table-hover table-light">
+            <thead className="thead thead-hover">
               <tr>
                 <th>Title</th>
                 <th>Developer</th>

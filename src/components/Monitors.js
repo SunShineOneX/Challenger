@@ -28,63 +28,38 @@ class Monitors extends Component {
     this.getMonitorInfo();
   }
 
-  deleteMonitorInfo(id) {
-    axios.delete("http://localhost:8080/monitors/" + id).then((response) => {
-      if (response.data != null) {
-        alert("Monitor deleted.");
-        this.setState({
-          info: this.state.info.filter((monitor) => monitor.id !== id),
-        });
-        this.getMonitorInfo();
-      }
-    });
-  }
+  // deleteMonitorInfo(id) {
+  //   axios.delete("http://localhost:8080/monitors/" + id).then((response) => {
+  //     if (response.data != null) {
+  //       alert("Monitor deleted.");
+  //       this.setState({
+  //         info: this.state.info.filter((monitor) => monitor.id !== id),
+  //       });
+  //       this.getMonitorInfo();
+  //     }
+  //   });
+  // }
 
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid" id="card__grid">
         <h1>Monitors</h1>
-
-        <div id="table">
-          <table>
-            <thead>
-              <tr>
-                <th>Model</th>
-                <th>Manufacturer</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Edit</th>
-              </tr>
-            </thead>
-            <tbody>
-              {this.state.info.length === 0 ? (
-                <tr align="center">
-                  <td colspan="6">No Monitors available...</td>
-                </tr>
-              ) : (
-                this.state.info.map((monitor) => {
-                  return (
-                    <tr>
-                      <td>{monitor.model}</td>
-                      <td>{monitor.manufacturer}</td>
-                      <td>{monitor.description}</td>
-                      <td>{monitor.price}</td>
-                      <td>
-                        <button
-                          class="btn btn-primary"
-                          id={monitor.id}
-                          onClick={(e) => this.deleteMonitorInfo(e.target.id)}
-                        >
-                          Delete
-                        </button>
-                      </td>
-                    </tr>
-                  );
-                })
-              )}
-            </tbody>
-          </table>
-        </div>
+       <div className="row">
+        {this.state.info.map((monitor) => {
+          return (
+            <div class="card col-lg-3 col-md-4">
+              <img class="card-img-top" src={monitor.url}  onMouseOver={e => (e.currentTarget.src =`${monitor.webUrl}`)} onMouseOut={e => (e.currentTarget.src =`${monitor.url}`)} alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">{monitor.model}</h5>
+                <h6 class="card-subtitle">{monitor.manufacturer}</h6>
+                <p class="card-text">{monitor.description}</p>
+                <p class="card-text"><b>{monitor.price}</b></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+          )
+        })}
+       </div>
       </div>
     );
   }
