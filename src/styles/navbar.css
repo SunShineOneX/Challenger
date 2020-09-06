@@ -14,8 +14,4 @@
 }
 
 #nav__link, a:hover {
-    text-decoration: none;
-    color: yellow;
-    font-size: 1.2rem;
-    transition: .9s;
 }
