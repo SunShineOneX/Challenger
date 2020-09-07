@@ -2,11 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 8vh 0 10vw;
-    margin: 10vh 10vw 2vh 10vw;
+    margin: 5vh 10vw 2vh 10vw;
 }
 
 .btn:hover {
     font-size: 1.1rem;
     transition: .9s;
+}
+
+.review-p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }

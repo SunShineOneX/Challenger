@@ -44,6 +44,7 @@ class ReviewList extends Component {
       <div className="container-fluid">
         <div className="main-container">
           <h1 className="top-header">Reviews</h1>
+          <p className="review-p">Post a review request for the Challenger team to work on next! <br /><b>(Please be considerate of deleting other peoples reviews)</b></p>
         <div className="review__table">
           <table className="table table-hover table-light">
             <thead className="thead thead-hover table-dark">
