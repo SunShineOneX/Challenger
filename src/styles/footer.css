@@ -1,30 +1,42 @@
-#footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 15vh;
-  background-color: #ff8e53;
-  background-image: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+.container-fluid {
+    padding: 0;
+    margin: 0;
 }
+
+
+#footer {
+    margin-top: 00vh;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 23vh;
+    background-color: #ff8e53;
+    /* background-color: black; */
+    color: white;
+    background-image: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+}
+
+/* Shout out to this coder for helping me to create the neon icons https://codepen.io/dig-lopes/pen/WLVGda */
 
 ul {
     margin: 0;
     padding: 0;
     display: flex;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  ul li {
+}
+
+ul li {
     list-style: none;
     margin: 0 15px;
-  }
-  
-  ul li a {
-    position: relative; 
+}
+
+ul li a {
+    position: relative;
     display: block;
     width: 60px;
     height: 60px;
@@ -35,9 +47,9 @@ ul {
     font-size: 30px;
     color: #666;
     transition: .5s;
-  }
+}
 
-  ul .github a::before {
+ul .github a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -45,24 +57,24 @@ ul {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #eb4559;
+    background: white;
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
-  }
-  
-  ul .github a:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #eb4559;
-  }
-  
-  ul .github a:hover {
-    color: #eb4559;
-    box-shadow: 0 0 5px #eb4559;
-    text-shadow: 0 0 5px #eb4559;
-  }
+}
 
-  ul .linkedin a::before {
+ul .github a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px white;
+}
+
+ul .github a:hover {
+    color: white;
+    box-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px white;
+}
+
+ul .linkedin a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -74,20 +86,20 @@ ul {
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
-  }
-  
-  ul .linkedin a:hover::before {
+}
+
+ul .linkedin a:hover::before {
     transform: scale(1.1);
     box-shadow: 0 0 15px #7DF9FF;
-  }
-  
-  ul .linkedin a:hover {
+}
+
+ul .linkedin a:hover {
     color: #7DF9FF;
     box-shadow: 0 0 5px #7DF9FF;
     text-shadow: 0 0 5px #7DF9FF;
-  }
+}
 
-  ul .discord a::before {
+ul .discord a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -99,20 +111,20 @@ ul {
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
-  }
-  
-  ul .discord a:hover::before {
+}
+
+ul .discord a:hover::before {
     transform: scale(1.1);
     box-shadow: 0 0 15px #ffee10;
-  }
-  
-  ul .discord a:hover {
+}
+
+ul .discord a:hover {
     color: #ffee10;
     box-shadow: 0 0 5px #ffee10;
     text-shadow: 0 0 5px #ffee10;
-  }
+}
 
-  ul .email a::before {
+ul .email a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -124,19 +136,22 @@ ul {
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
-  }
-  
-  ul .email a:hover::before {
+}
+
+ul .email a:hover::before {
     transform: scale(1.1);
     box-shadow: 0 0 15px #00fa9a;
-  }
-  
-  ul .email a:hover {
+}
+
+ul .email a:hover {
     color: #00fa9a;
     box-shadow: 0 0 5px #00fa9a;
     text-shadow: 0 0 5px #00fa9a;
-  }
-  
-  
-  
-  
+}
+
+.copyright {
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 41%;
+}

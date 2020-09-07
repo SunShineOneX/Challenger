@@ -42,6 +42,7 @@ class ReviewList extends Component {
   render() {
     return (
       <div className="container-fluid">
+        <div className="main-container">
           <h1>Reviews</h1>
         <div className="review__table">
           <table className="table table-hover table-light">
@@ -81,6 +82,7 @@ class ReviewList extends Component {
               )}
             </tbody>
           </table>
+        </div>
         </div>
       </div>
     );

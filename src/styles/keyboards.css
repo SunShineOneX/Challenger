@@ -28,5 +28,13 @@ th {
 }
 
 .card-body {
-    padding: 0;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        max-height: 400px;
+        min-width: 100px;
+        margin: 5px;
+        padding: 30px;
+        width: 100%;
+    }

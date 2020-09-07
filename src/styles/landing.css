@@ -1,17 +1,15 @@
-* {
+.container-fluid{
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: white;
+  color: black;
 }
 
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url("https://www.hdwallpapers.net/previews/purple-waves-1179.jpg");
-  background-image: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
-  /* background-image: url("https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"); */
-  
+  background-image: url("https://images5.alphacoders.com/880/thumb-1920-880175.jpg");
+  background-image: url("https://images5.alphacoders.com/872/thumb-1920-872037.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -22,12 +20,17 @@
   padding-top: 3.5vh;
   padding-left: 5vw;
   cursor: pointer;
+  width: 25vw;
 }
 #landing__btn {
   background-image: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
-  background: transparent;
   border-radius: 20px;
   border: 2.5px solid white;
+  text-decoration: none;
+}
+
+#landing__btn, a {
+text-decoration: none;
 }
 
 .content {
@@ -38,10 +41,14 @@
   z-index: 2;
 }
 
-h1 {
+.landing__h1 {
   font-size: 5rem;
   margin: 0.625rem 0 1.875rem;
   line-height: 5rem;
+}
+
+.landing__h6 {
+  color: white;
 }
 
 .icons img {

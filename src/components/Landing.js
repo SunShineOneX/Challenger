@@ -176,10 +176,11 @@ class Landing extends Component {
     return (
       <div className="container-fluid">
         <div className="hero">
-          <img className="logo" src= {(require("../assets/challenger-nav.png"))} />
+          <img className="logo" src= {(require("../assets/challenger_white.png"))} />
         <div className="content">
-          <h6>Welcome to the</h6>
-          <h1>Future of Gaming</h1>
+          <h6 className="landing__h6">Welcome to the</h6>
+          <h1 className="landing__h1">Future of gaming</h1>
+          
           <button id="landing__btn" class="btn btn-primary" onClick={postLaunchData}>
           <Link to="/home">Get started</Link>
           </button>

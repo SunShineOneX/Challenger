@@ -1,3 +1,14 @@
 /* .card-img-top:hover {
     background-image: 
 } */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    max-height: 400px;
+    min-width: 100px;
+    margin: 5px;
+    padding: 30px;
+    width: 100%;
+}
