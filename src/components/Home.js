@@ -5,7 +5,7 @@ function Home() {
     return (
         <div className="container-fluid">
           <div className="main-container">
-          <h1>Thousands of games to choose from</h1>
+          <h1 className="top-header">Thousands of games to choose from</h1>
           </div>
         </div>
     )

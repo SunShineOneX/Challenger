@@ -5,7 +5,7 @@
 
 
 #footer {
-    margin-top: 00vh;
+    margin-top: 20vh;
     position: relative;
     left: 0;
     bottom: 0;
@@ -13,10 +13,15 @@
     width: 100vw;
     height: 23vh;
     background-color: #ff8e53;
-    /* background-color: black; */
     color: white;
     background-image: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
 }
+
+@media only screen and (min-width: 1400px) {
+    #footer {
+        height: 17vh;
+    }
+    }
 
 /* Shout out to this coder for helping me to create the neon icons https://codepen.io/dig-lopes/pen/WLVGda */
 
@@ -151,6 +156,7 @@ ul .email a:hover {
 
 .copyright {
     text-align: center;
+    align-items: center;
     position: absolute;
     top: 60%;
     left: 41%;

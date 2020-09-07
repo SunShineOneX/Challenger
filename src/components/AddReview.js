@@ -86,7 +86,8 @@ class addReview extends Component {
 
     return (
       <div className="container-fluid">
-        <h1>Request a Review</h1>
+        <div className="main-container">
+        <h1 className="top-header">Request a Review</h1>
         <form>
           <div className="form-group" id="review__form">
             <div className="row">
@@ -140,6 +141,7 @@ class addReview extends Component {
             </div>
           </div>
         </form>
+        </div>
       </div>
     );
   }

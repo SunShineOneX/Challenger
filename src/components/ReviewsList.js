@@ -43,7 +43,7 @@ class ReviewList extends Component {
     return (
       <div className="container-fluid">
         <div className="main-container">
-          <h1>Reviews</h1>
+          <h1 className="top-header">Reviews</h1>
         <div className="review__table">
           <table className="table table-hover table-light">
             <thead className="thead thead-hover">

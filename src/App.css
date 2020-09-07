@@ -2,3 +2,16 @@ body {
  overflow-x: hidden;
 }
 
+.top-header {
+    text-align: center;
+    padding-top: 10vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.root {
+    height: calc(100% - 60px);
+}

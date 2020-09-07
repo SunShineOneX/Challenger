@@ -190,7 +190,7 @@ class Landing extends Component {
           <img src={(require("../assets/diamond.png"))} />
           <img src={(require("../assets/joystick.png"))} />
           <img src={(require("../assets/gamepad.png"))} />
-          <img src={(require("../assets/spaceship.png"))} />
+          <img src={(require("../assets/spaceship.png"))}/>
           <img src={(require("../assets/heart.png"))} />
           <img src={(require("../assets/space-invaders.png"))} />
         </div>

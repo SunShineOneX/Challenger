@@ -28,7 +28,7 @@ import "../styles/games.css";
         return (
           <div className="container-fluid" id="card__grid">
             
-              <h1>Games</h1>
+              <h1 className="top-header">Games</h1>
               <div class="row">
               {this.state.info.map((game) => {
               return (
