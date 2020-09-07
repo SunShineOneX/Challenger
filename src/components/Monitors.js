@@ -43,6 +43,7 @@ class Monitors extends Component {
   render() {
     return (
       <div className="container-fluid" id="card__grid">
+        <div className="main-container">
         <h1 className="top-header">Monitors</h1>
        <div className="row">
         {this.state.info.map((monitor) => {
@@ -59,6 +60,7 @@ class Monitors extends Component {
             </div>
           )
         })}
+       </div>
        </div>
       </div>
     );

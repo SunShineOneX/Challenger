@@ -27,12 +27,12 @@ class Keyboards extends Component {
   render() {
     return (
       <div className="container-fluid" id="card__grid">
-        
+        <div className="main-container">
         <h1 className="top-header">Mechanical Keyboards</h1>
           <div class="row">
           {this.state.info.map((keyboard) => {
           return (
-            <div class="card col-lg-3 col-md-4 col-sm">
+            <div class="card col-lg-3 col-md-4">
   <img class="card-img-top" src={keyboard.url}  onMouseOver={e => (e.currentTarget.src =`${keyboard.webUrl}`)} onMouseOut={e => (e.currentTarget.src =`${keyboard.url}`)}alt="Card image cap" />
   <div class="card-body">
     <h5 class="card-title">{keyboard.model}</h5>
@@ -45,7 +45,7 @@ class Keyboards extends Component {
         );
         })}
       </div>
-      
+      </div>
       </div>
     
      

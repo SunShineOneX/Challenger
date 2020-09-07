@@ -27,7 +27,7 @@ import "../styles/games.css";
       render() {
         return (
           <div className="container-fluid" id="card__grid">
-            
+            <div className="main-container">
               <h1 className="top-header">Games</h1>
               <div class="row">
               {this.state.info.map((game) => {
@@ -45,7 +45,7 @@ import "../styles/games.css";
             );
             })}
           </div>
-          
+          </div>
           </div>
         
          

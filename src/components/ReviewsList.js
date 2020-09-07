@@ -46,7 +46,7 @@ class ReviewList extends Component {
           <h1 className="top-header">Reviews</h1>
         <div className="review__table">
           <table className="table table-hover table-light">
-            <thead className="thead thead-hover">
+            <thead className="thead thead-hover table-dark">
               <tr>
                 <th>Title</th>
                 <th>Developer</th>

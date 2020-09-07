@@ -10,12 +10,9 @@ th {
 }
 
 #review__form {
-    margin: 7rem 5rem 2rem ;
+    margin: 4rem 5rem 2rem ;
     border-style: groove;
-    /* border-top: .5rem solid #ff7d70!important; */
     border-left: 1rem solid #fe6e87!important;
-    /* border-right: .5rem solid  #fe6e87!important;
-    border-bottom: .5rem solid #ff8e53!important; */
 }
 
 #review__form, h5 {
