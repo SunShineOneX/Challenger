@@ -1,5 +1,15 @@
 ![Project Showcase](https://github.com/SunShineOneX/Challenger/blob/master/src/assets/CHALLENGER.png?raw=true)
 
+# Install directions
+- Clone challenger repo
+- Open up Postico or similar PostgresSQL database client
+- Create a database named challenger ( The spring app will auto create the collections upon running the application)
+- Open Challenger back-end in Java and import as a maven project
+- Launch the spring app in intellij
+- Open up the Challenger react-app in your preferred IDE and npm i- to obtain all of the dependencies
+- navigate in terminal to the challenger react app folder and type npm start to launch the app on your local server
+- Enjoy!
+
 # Challenger
 
 Challenger is a PC gamers dream e-commerce store. Offering the best games, high-res monitors,
