@@ -1,11 +1,38 @@
 .card-body {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    max-height: 400px;
+    /* justify-content: flex-end; */
+    max-height: 500px;
     min-width: 100px;
     margin: 5px;
-    padding: 30px;
+    width: 300px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.card {    
+    /* width: 33vw;
+    margin: 2vw;
+    border: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-img-top {
+    max-height: 200px;
     width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card-subtitle {
+    padding-bottom: 1rem;
 }

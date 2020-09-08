@@ -32,7 +32,7 @@ import "../styles/games.css";
               <div class="row">
               {this.state.info.map((game) => {
               return (
-                <div class="card col-lg-3 col-md-4">
+                <div class="card col-lg-4 col-md-6">
       <img class="card-img-top" src={game.url} onMouseOver={e => (e.currentTarget.src =`${game.webUrl}`)} onMouseOut={e => (e.currentTarget.src =`${game.url}`)}  alt="Card image cap" />
       <div class="card-body">
         <h5 class="card-title">{game.title}</h5>

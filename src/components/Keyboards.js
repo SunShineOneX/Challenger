@@ -32,7 +32,7 @@ class Keyboards extends Component {
           <div class="row">
           {this.state.info.map((keyboard) => {
           return (
-            <div class="card col-lg-3 col-md-4">
+            <div class="card col-lg-4 col-md-6">
   <img class="card-img-top" src={keyboard.url}  onMouseOver={e => (e.currentTarget.src =`${keyboard.webUrl}`)} onMouseOut={e => (e.currentTarget.src =`${keyboard.url}`)}alt="Card image cap" />
   <div class="card-body">
     <h5 class="card-title">{keyboard.model}</h5>

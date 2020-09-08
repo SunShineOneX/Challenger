@@ -8,6 +8,11 @@ class ReviewList extends Component {
     this.state = {
       info: [],
       isListEmpty: false,
+      id: ``,
+      title: ``,
+      developer: ``,
+      description: ``,
+      email: ``,
     };
   }
 
@@ -49,6 +54,7 @@ class ReviewList extends Component {
           <table className="table table-hover table-light">
             <thead className="thead thead-hover table-dark">
               <tr>
+                <th>Id</th>
                 <th>Title</th>
                 <th>Developer</th>
                 <th>Description</th>
@@ -65,6 +71,7 @@ class ReviewList extends Component {
                 this.state.info.map((review) => {
                   return (
                     <tr>
+                      <td>{review.id}</td>
                       <td>{review.title}</td>
                       <td>{review.developer}</td>
                       <td>{review.description}</td>

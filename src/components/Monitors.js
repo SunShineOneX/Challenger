@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { Component } from "react";
-import "../styles/monitors.css";
+import "../styles/games.css";
 
 class Monitors extends Component {
   constructor(props) {
@@ -48,7 +48,7 @@ class Monitors extends Component {
        <div className="row">
         {this.state.info.map((monitor) => {
           return (
-            <div class="card col-lg-3 col-md-4">
+            <div class="card col-lg-4 col-md-6">
               <img class="card-img-top" src={monitor.url}  onMouseOver={e => (e.currentTarget.src =`${monitor.webUrl}`)} onMouseOut={e => (e.currentTarget.src =`${monitor.url}`)} alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">{monitor.model}</h5>
