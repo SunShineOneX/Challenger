@@ -24,6 +24,7 @@ Challenger does both.)
 - React Router
 - Use of async actions and AJAX requests
 - Has 3 model APIs
+- 1 API is a unique model CRUD API
 - Bootstrap
 - Responsive mobile design
 
