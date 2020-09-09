@@ -18,7 +18,7 @@ class ReviewList extends Component {
 
   async getReviewList() {
     try {
-      const res = await axios.get("http://localhost:8080/reviews");
+      const res = await axios.get("https://gentle-harbor-36153.herokuapp.com/reviews");
       this.setState({ info: res.data });
       if (this.state.info != null) {
           this.setState({ isListEmpty: true});
@@ -33,7 +33,7 @@ class ReviewList extends Component {
   }
 
  deleteReviewInfo(id) {
-    axios.delete("http://localhost:8080/reviews/" + id).then((response) => {
+    axios.delete("https://gentle-harbor-36153.herokuapp.com/reviews" + id).then((response) => {
       if (response.data != null) {
         alert("Review deleted.");
         this.setState({

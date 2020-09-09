@@ -54,7 +54,7 @@ class addReview extends Component {
 
  postReviewData = async () => {
     try {
-      await axios.post("http://localhost:8080/reviews", {
+      await axios.post("https://gentle-harbor-36153.herokuapp.com/reviews", {
         title: this.state.title,
         developer: this.state.developer,
         description: this.state.description,
