@@ -16,9 +16,9 @@
 }
 
 .card {    
-    /* width: 33vw;
+    width: 33vw;
     margin: 2vw;
-    border: none; */
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
