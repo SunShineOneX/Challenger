@@ -13,7 +13,7 @@ class Monitors extends Component {
 
   async getMonitorInfo() {
     try {
-      const res = await axios.get("http://localhost:8080/monitors");
+      const res = await axios.get("https://gentle-harbor-36153.herokuapp.com/monitors");
       this.setState({ info: res.data }); // remove json if issue
       if (this.state.info != null) {
         this.setState({ isListEmpty: true });

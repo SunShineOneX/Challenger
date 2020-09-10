@@ -14,6 +14,8 @@ public class GameController {
     @Autowired
     GameService gameService;
 
+    // test
+
     @GetMapping
     public Iterable<Game> findAll() {
         return gameService.listGames();
