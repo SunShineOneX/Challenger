@@ -12,7 +12,7 @@ class Keyboards extends Component {
 
   async getKeyboardInfo() {
     try {
-      const res = await axios.get("http://localhost:8080/keyboards");
+      const res = await axios.get("https://gentle-harbor-36153.herokuapp.com/keyboards");
       this.setState({ info: res.data }); // remove json if issue
       console.log(this.state.info);
     } catch {
