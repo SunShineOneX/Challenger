@@ -45,6 +45,11 @@ function App() {
         <AddReview />
         <Footer />
       </Route>
+      <Route exact path="/reviews?">
+        <Navbar />
+        <AddReview />
+        <Footer />
+      </Route>
       <Route exact path="/reviews/list">
         <Navbar />
         <ReviewList />

@@ -33,7 +33,7 @@ class ReviewList extends Component {
   }
 
  deleteReviewInfo(id) {
-    axios.delete("https://gentle-harbor-36153.herokuapp.com/reviews" + id).then((response) => {
+    axios.delete("https://gentle-harbor-36153.herokuapp.com/reviews/" + id).then((response) => {
       if (response.data != null) {
         alert("Review deleted.");
         this.setState({
