@@ -58,8 +58,7 @@ class addReview extends Component {
         title: this.state.title,
         developer: this.state.developer,
         description: this.state.description,
-        email: this.state.email,
-        
+        email: this.state.email,     
       });
       let addForm = document.getElementById("add-form");
       addForm.reset();
