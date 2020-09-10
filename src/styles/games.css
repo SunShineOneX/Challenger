@@ -17,8 +17,8 @@
 
 .card {    
     /* width: 33vw;
-    margin: 1vw; */
-    border: none;
+    margin: 2vw; 
+    border: none; */
     display: flex;
     justify-content: center;
     align-items: center;

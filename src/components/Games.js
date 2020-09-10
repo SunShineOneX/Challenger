@@ -12,7 +12,7 @@ import "../styles/games.css";
     
       async getGameInfo() {
         try {
-          const res = await axios.get("http://localhost:8080/games");
+          const res = await axios.get("https://gentle-harbor-36153.herokuapp.com/games");
           this.setState({ info: res.data }); // remove json if issue
           console.log(this.state.info);
         } catch {
