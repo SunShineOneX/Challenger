@@ -2,6 +2,7 @@ import React from 'react'
 import "../styles/home.css";
 
 function Home() {
+  alert("Please allow 15 seconds for my heroku deployed back end to wake up! Thank you.")
     return (
         <div className="container-fluid">
           <div className="home-container">
